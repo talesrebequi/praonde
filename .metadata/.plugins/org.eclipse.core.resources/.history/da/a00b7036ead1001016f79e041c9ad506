@@ -1,0 +1,35 @@
+<%@ page import="java.util.*, Dao.*, Servlets.*" %>
+	<html>
+	     <body>
+	     	<form action="consultaOS">
+			<h3>Consulta de OS's</h3>
+				     	
+	      	Parâmetro para a consulta:   <select size="1" name="parametro">
+	      	<option value="idOS">Código</option>
+	      	<option value="idCliente">Cliente</option>
+	      	<option value="status">Status</option>
+	      	</select>
+	      	<br>
+	      	<br>
+	      	
+	      	Dimensão para a consulta:   <select size="1" name="dimensao">
+	      	<option value="igual">Igual a</option>
+	      	<option value="maior">Maior que</option>
+	      	<option value="menor">Menor que</option>
+	      	<option value="contem">Contém</option>
+	      	<option value="ncontem">Não contém</option>
+	      	</select>
+	      	<br>
+	      	<br>
+	      	
+	      	Valor da consulta: <input type="text" name="valor"></input>
+	      	<br>
+	      	<br>
+	      
+	      	
+	      	<input type="submit" value="Buscar" />
+			
+			</form>
+                   
+	     	</body>
+   </html>

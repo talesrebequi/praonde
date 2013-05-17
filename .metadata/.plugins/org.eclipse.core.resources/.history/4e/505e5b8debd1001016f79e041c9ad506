@@ -1,0 +1,117 @@
+<%@ page import="java.util.*, Dao.*, Servlets.*" %>
+	<html>
+	     <body>
+	     	<form action="edita_hotel.jsp">
+	     	<h2>Ordem de Serviço:</h2>
+	     	<table cellspacing="1" cellpadding="1" border="3"> 
+	     	<tr>
+	     	<%
+	     	OSDAO dao = new OSDAO();
+	     	OS os;
+	     	int idOS = 0;
+	     	System.out.println(request.getParameter("idOS"));
+	     	if(request.getParameter("idOS") != null){
+	     		idOS = Integer.parseInt(request.getParameter("idOS"));
+	     	}
+	     	os = dao.getOS(idOS);
+	     	
+	     	ClienteDAO cdao = new ClienteDAO();
+	     	Cliente cliente;
+	     	cliente = cdao.getCliente(os.getIdCliente());
+	     	
+			Condicao_PagamentoDAO cpdao = new Condicao_PagamentoDAO();
+			Condicao_Pagamento cp = cpdao.getCond(os.getIdCondicao_Pagamento());
+			
+			String dataLancamento = os.getDataLancamento();
+			String dataEntrega = os.getDataEntrega();
+			String observacao = os.getObservacao();
+			String status = os.getStatus();
+			
+	     	%>
+	     	<td><center>Código da OS:</center></td>
+	     	<td><%=idOS%></td>
+	     	</tr>
+	     	<tr>
+	     	<td><center>Status:</center></td>
+	     	<td><%=status%></td>
+	     	</tr>
+	     	<tr>
+	     	<td><center>Cliente:</center></td>
+	     	<td> <%=cliente.getIdCliente() + "-" + cliente.getFantasia()%> </td>
+	     	</tr>
+	     	<tr>
+	     	<td><center>Data de Lançamento:</center> </td>
+	     	<td> <%=dataLancamento%> </td>
+	     	</tr>
+	     	<tr>
+	     	<td><center>Data de Entrega: </center></td>
+	     	<td><%=dataEntrega %></td>
+	     	</tr>
+	     	<tr>
+	     	<td><center>Observação:</center></td>
+			<td> <%=observacao%> </td>
+			</tr>
+			</table>
+	      	<br>
+	      	<br>
+			<input type="hidden" value="<%=idOS %>" name="idOS" />
+	      	<input type="submit" value="Editar" />	
+	      	</form>
+
+			
+			<form action="adiciona_os_has_produtos.jsp?idOS=<%=idOS%>">
+	     	<h2>Itens:</h2>
+	     	<table cellspacing="1" cellpadding="1" border="3"> 
+	     	<tr>
+	     	<td>
+	     		Código
+	     	</td>
+	     	<td>
+	     		Produto
+	     	</td>
+	     	<td>
+	     		Quantidade
+	     	</td>
+	     	<td>
+	     		Valor
+	     	</td>
+	     	<td>
+	     		Conserto
+	     	</td>
+	     	<td>
+	     		Motivos
+	     	</td>
+	     	</tr>
+	     	<tr>
+	     	<%
+	     	OS_has_ProdutosDAO hhsdao = new OS_has_ProdutosDAO();
+	     	List<OS_has_Produtos> ohps = hhsdao.getOHPsOS(idOS);
+	     	
+	     	ProdutoDAO pdao = new ProdutoDAO();
+	     	MotivoDAO mdao = new MotivoDAO();
+	     	
+	     	for(OS_has_Produtos ohp : ohps){
+	     		Produto p = pdao.getProduto(ohp.getIdProduto());
+	     		Motivo m = mdao.getMotivo(ohp.getIdMotivo());
+	     			     	
+	     	%>
+	     	<td><%= p.getIdProduto()%></td>
+	     	<td><%= p.getDescricao()%></td>
+	     	<td><%= ohp.getQuantidade()%></td>
+	     	<td>R$ <%= p.getValor()*ohp.getQuantidade()%></td>
+	     	<td><%= ohp.getConserto()%></td>
+	     	<td><%= m.getMotivo()%></td>
+	     	<td><a href="edita_os_has_produtos.jsp?idOsHasProdutos=<%=ohp.getIdOS_has_produtos()%>">Editar</a></td>
+	     	<td><a href="remove_os_has_produtos.jsp?idOsHasProdutos=<%=ohp.getIdOS_has_produtos()%>">Remover</a></td>
+	     	</tr>
+	     	<%
+	     	}
+	     	%>
+	     	</table>
+	      	<br>
+	      	<br>		
+	      	<input type="submit" value="Adicionar" />		
+			</form>
+			                   
+	     	</body>
+   </html>

@@ -1,0 +1,53 @@
+package Servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Dao.Hotel;
+import Dao.Hotel_has_UsuarioDAO;
+import Dao.Usuario;
+import Dao.UsuarioDAO;
+
+/**
+ * Servlet implementation class AdicionaContatoServlet
+ */
+public class ConsultaHHUServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+		throws IOException, ServletException {
+	
+		PrintWriter out = response.getWriter();
+		int cont = 0;
+
+		String sql;
+		// pegndo os parâmetros do request
+		int idUsuario = Integer.parseInt(request.getParameter("idUsuario"));
+		
+		sql = "select * from hotel_has_usuario where idUsuario = " + idUsuario;
+		
+		System.out.println(sql);
+		
+		Hotel_has_UsuarioDAO hhu = new Hotel_has_UsuarioDAO();
+		List<Hotel> hoteis = hhu.getHoteis(idUsuario);
+		
+		out.println("<html>");
+		out.println("<body>");
+		if (hoteis.isEmpty()){
+			out.println("<h3> Não há hotéis cadastrados com essa especificação!</h3>");
+		}else for(Hotel h : hoteis){
+			out.println("<a href=exibe_usuario.jsp?idusuario="+h.getIdHotel()+">"+u.getNomeUsuario()+"</a><br>");
+			cont++;
+		}	
+		out.println("</body>");
+		out.println("</html>");	
+		
+	}	
+}

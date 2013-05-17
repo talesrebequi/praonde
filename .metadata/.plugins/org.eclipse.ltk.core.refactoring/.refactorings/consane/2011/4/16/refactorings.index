@@ -1,0 +1,47 @@
+1302670809394	Rename type 'UsuarioDAO'
+1302671596685	Rename type 'AdicionaUsuarioServlet'
+1302705904062	Rename type 'ConsultaUsuarioServlet'
+1302706163567	Rename resource 'exibe_usuario.jsp'
+1302706951497	Rename resource 'adiciona_usuario.jsp'
+1302707821158	Rename resource 'exibe_mapaHoteis.jsp'
+1302712545197	Rename type 'Classificacao'
+1302712594278	Rename type 'ClassificacaoDAO'
+1302712910548	Rename type 'AdicionaClassificacaoServlet'
+1302714723650	Rename type 'Hotel_has_Servico'
+1302714833604	Rename type 'Hotel_has_ServicoDAO'
+1302714913169	Rename field 'idProduto'
+1302717328596	Rename type 'Regiao'
+1302717386869	Rename type 'RegiaoDAO'
+1302717660890	Rename type 'AdicionaRegiaoServlet'
+1302718078862	Rename type 'AdicionaHHServServlet'
+1302718575839	Rename field 'conexta'
+1302746121440	Rename type 'Pedido_has_Clientes'
+1302746140025	Rename type 'Pedido_has_ClientesDAO'
+1302746392822	Rename type 'AdicionaClientesPedidoServlet'
+1302746440699	Rename resource 'adiciona_clientes_pedido.jsp'
+1302754523867	Copy file
+1302757749821	Delete elements
+1302757782590	Delete elements
+1302757843175	Delete elements
+1302816397883	Copy compilation unit
+1302816900828	Copy compilation unit
+1302953862022	Copy compilation unit
+1302953882047	Rename type 'PagamentosReceber'
+1302953886195	Delete element
+1302953891314	Copy compilation unit
+1302953899554	Copy compilation unit
+1302954121325	Copy compilation unit
+1302954246641	Copy file
+1302955182958	Copy compilation unit
+1302955253949	Copy compilation unit
+1302955261704	Delete element
+1302955273041	Copy compilation unit
+1302955988865	Copy file
+1302956077622	Copy file
+1302956080723	Delete element
+1302956092246	Copy file
+1302974901162	Delete elements
+1302974910220	Delete elements
+1302974916257	Delete elements
+1302974921245	Delete elements
+1302974944476	Delete elements

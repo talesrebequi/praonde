@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654287785
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654297502
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654322150
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1323654339887
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1323654346641
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654348631
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1323654352422
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1323654360483
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654362529
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1323654367160
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323654380142
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654381058
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654381603
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1323654382159
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654383417
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654390832
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654393934
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323654408467
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654409458
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654409732
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654441765
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654446543
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323654478580
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1323654480821
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1323654497637
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654498229
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1323654514998
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1323654515349
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654515934
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654517520
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654524193
+opened,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654525400
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654525424
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654530234
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654698063
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654701137
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654703691
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323654711299
+opened,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654721297
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654721328
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323654732579
+opened,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654738989
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654739022
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323654745110
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323654745763
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654746908
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654761152
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654769862
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323654769876
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323654772024
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654785575
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323654787181
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654792019
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654799634
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654828810
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654849217
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323654852318
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323654852486
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.textStart",1323654859550
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654859955
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.findReplace",1323654859978
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323654863810
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323654866866
+error,log,,,"Plug-in tk.eclipse.plugin.jsf was unable to load class tk.eclipse.plugin.jsf.JSFFileAssistProcessor.",1323654873108
+opened,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.xmleditor.editors.XMLEditor",1323654904515
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.xmleditor.editors.XMLEditor",1323654904538
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.select.wordPrevious",1323654913481
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.select.wordPrevious",1323654913692
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323654914494
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654918871
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323654924976
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.xmleditor.editors.XMLEditor",1323654928739
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323654931166
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323654931369
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323654931838
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323654938787
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654939879
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654941600
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654942958
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323654943579
+started,bundle,org.eclipse.wst.xsl.exslt.core,1.0.0.v201005240426,"org.eclipse.wst.xsl.exslt.core",1323654946456
+started,bundle,org.eclipse.wst.internet.cache,1.0.400.v201004280700,"org.eclipse.wst.internet.cache",1323654946773
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323654977009
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655025738
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655243459
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323655245944
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323655246750
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655247038
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655248385
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655251221
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.htmleditor.editors.HTMLEditor",1323655256043
+opened,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655261471
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655261499
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655279395
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655328538
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655328933
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655331583
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655331610
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655347200
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655356962
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.selectAll",1323655359111
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655359531
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655359742
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655360527
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655362941
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655364345
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655364371
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655369444
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655369761
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655369814
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655370476
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655371504
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655371661
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.selectAll",1323655372082
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655372453
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655372871
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655374347
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655410523
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655414303
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323655422490
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323655423036
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655423645
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655424033
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.selectAll",1323655430586
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655432076
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655434473
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655445276
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655455993
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655461238
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655464048
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655470425
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655471701
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655472144
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655476407
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655477129
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655489033
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655495414
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.htmleditor.editors.HTMLEditor",1323655496451
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655497331
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655542808
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655543753
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655566190
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655566993
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655578917
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1323655579359
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1323655580763
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1323655581478
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.redo",1323655583979
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655584365
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655585504
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1323655585922
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655586520
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655595480
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655599904
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655600745
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655602686
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655603243
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1323655624438
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655633941
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655647104
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1323655656029
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655657014
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655659829
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655661434
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655662629
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655673237
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655673401
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1323655682098
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.select.lineStart",1323655682308
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.cut",1323655682671
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.lineStart",1323655684621
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655685740
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655686002
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655687552
+activated,editor,org.eclipse.jdt.ui,3.6.2.r362_v20110203,"org.eclipse.jdt.ui.CompilationUnitEditor",1323655701007
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655701459
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655702234
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655706384
+closed,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655706384
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655707049
+error,log,,,"Plug-in tk.eclipse.plugin.jsf was unable to load class tk.eclipse.plugin.jsf.JSFFileAssistProcessor.",1323655707232
+opened,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655707286
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655707307
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655710714
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655710875
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655717132
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655717313
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655721948
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655722465
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655722631
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1323655725877
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655728363
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655731464
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323655737324
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.edit.text.goto.wordNext",1323655737778
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1323655738358
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655738623
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655739972
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655746536
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655750071
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655752298
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655753663
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655753833
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655755183
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655755484
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655756247
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655760933
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1323655761724
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1323655769192
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655769358
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655770908
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1323655771505
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655773577
+activated,editor,tk.eclipse.plugin.htmleditor,2.0.2,"tk.eclipse.plugin.jspeditor.editors.JSPEditor",1323655774237
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655775320
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655788309
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1323655792562
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655796583
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1323655802249
+activated,editor,org.eclipse.ui.browser,3.3.1.r36_20101216,"org.eclipse.ui.browser.editor",1323655803384
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823982
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823982
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823982
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823983
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823983
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823983
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823983
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823983
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823983
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823984
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823984
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823984
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823984
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823984
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823985
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823985
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823985
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823985
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823985
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823986
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823986
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823986
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823986
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823986
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823987
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823987
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823987
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823987
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823987
+no handler,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1323655823988

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;consane/WebContent/relatorio_pedido.jsp&apos; to &apos;relatorio_pedido2.jsp&apos;" description="Rename resource &apos;relatorio_pedido.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/relatorio_pedido.jsp" name="relatorio_pedido2.jsp" stamp="1306464048324" updateReferences="true"/>
+</session>

@@ -1,0 +1,415 @@
+<%@ page import="java.util.*, Dao.*, Servlets.*, Utilities.*, java.text.DecimalFormat;" %>
+<jsp:directive.page contentType="text/html; charset=utf-8" />  
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pedido</title>
+<%
+
+//java.text.NumberFormat nf = java.text.NumberFormat.getNumberInstance();
+//nf.setMinimumFractionDigits(2);
+//nf.setMaximumFractionDigits(2);
+
+
+PedidoDAO pedDAO = new PedidoDAO();
+Pedido pedido = pedDAO.getPedido(Integer.parseInt(request.getParameter("idPedido")));
+
+Pedido_has_ItensDAO phiDao = new Pedido_has_ItensDAO();
+List<Pedido_has_Itens> phis = phiDao.getRefs(pedido.getIdPedido());
+
+      Collections.sort (phis, new Comparator(){  
+            public int compare(Object o1, Object o2) {  
+                Pedido_has_Itens p1 = (Pedido_has_Itens) o1;  
+                Pedido_has_Itens p2 = (Pedido_has_Itens) o2;
+                ReferenciaDAO refdao = new ReferenciaDAO();
+                Referencia ref1 = refdao.getReferencia(p1.getIdReferencia());
+                Referencia ref2 = refdao.getReferencia(p2.getIdReferencia());                
+                return ref1.getReferencia().compareTo(ref2.getReferencia());  
+            }  
+        });
+        
+FornecedorDAO fornecedorDao = new FornecedorDAO();
+Fornecedor fornecedor = fornecedorDao.getFornecedor(pedido.getIdFornecedor());
+
+ClienteDAO clienteDao = new ClienteDAO();
+Cliente cliente = clienteDao.getCliente(pedido.getIdCliente());
+
+String desconto = "";
+if (pedido.getDesconto1()!=0.0){
+	desconto = desconto + Double.toString(pedido.getDesconto1())+"%";
+	if (pedido.getDesconto2()!=0.0){
+		desconto = desconto +", "+ Double.toString(pedido.getDesconto2())+"%";
+		if (pedido.getDesconto3()!=0.0){
+			desconto = desconto +", "+ Double.toString(pedido.getDesconto3())+"%";
+			if (pedido.getDesconto4()!=0.0){
+				desconto = desconto +", "+ Double.toString(pedido.getDesconto4())+"%";
+				if (pedido.getDesconto5()!=0.0){
+					desconto = desconto +", "+ Double.toString(pedido.getDesconto5())+"%";
+				}
+			}
+		}
+	}
+}
+
+%>
+<style type="text/css">
+body p {
+	font-size: 14px;
+}
+body p {
+	font-size: 36px;
+}
+body p {
+	text-align: center;
+}
+body p {
+	font-weight: bold;
+}
+body p {
+	font-size: 24px;
+}
+table {
+	text-align: right;
+}
+#xxxx {
+}
+#xxxx {
+}
+#xxxx {
+	text-align: left;
+}
+</style>
+</head>
+
+<body>
+<table width="904" border="0" align="center">
+  <tr>
+    <td colspan="4" bgcolor="#FFFFFF"><p>CONSANE REPRESENTAÇÕES LTDA</p>
+    <p><a href="javaScript:window.print()">PEDIDO DE COMPRA</a></p>
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td colspan="4" bgcolor="#FFFFFF"><center>
+        <b>Fornecedor:</b>
+    <%=fornecedor.getDescricao() %> 
+    </center></td>
+  </tr>
+  <tr>
+    <td width="174"><b>Pedido Nº:</b></td>
+    <td width="346" align="left">
+      <span id="xxxx"><%=pedido.getIdPedido() %></span>
+    </td>
+    <td width="78">&nbsp;</td>
+    <td width="288">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><b>Data:</b></td>
+    <td id="xxxx"><%=pedido.getDataEmissao() %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4" bgcolor="#CCCCCC" ><center>
+      <strong>Empresa de Faturamento</strong>
+    </center></td>
+  </tr>
+  <tr>
+    <td><b>Cliente:</b></td>
+    <td align="left"><%=cliente.getFantasia() %></td>
+    <%if (cliente.getBairro()!=null && cliente.getBairro().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Bairro:</b></td>
+    <td align="left"><%=cliente.getBairro() %></td>
+    <%} %>
+  </tr>
+  <%if (cliente.getEndereco().replaceAll(" ","").equals("")==false  && cliente.getEndereco()!=null
+  		 || cliente.getCep().replaceAll(" ","").equals("")==false  && cliente.getCep()!=null){ %>
+  <tr>
+  	<%if (cliente.getEndereco()!=null && cliente.getEndereco().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Endereço:</b></td>
+    <td align="left"><%=cliente.getEndereco() %></td>
+    <%} %>
+    <%if (cliente.getEstado()!=null && cliente.getEstado().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Estado:</b></td>
+    <td align="left"><%=cliente.getEstado() %></td>
+    <%
+    System.out.println("Cliente GetEstadO:" +  cliente.getEstado());
+    } %>
+  </tr>
+  <%} %>
+  <% if(cliente.getCidade().replaceAll(" ","").equals("")==false   && cliente.getCidade()!=null || 
+  		cliente.getTelefone().replaceAll(" ","").equals("")==false  && cliente.getTelefone()!=null){ %>
+  <tr>
+    <%if (cliente.getCidade()!=null && cliente.getCidade().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Cidade:</b></td>
+    <td align="left"><%=cliente.getCidade() %></td>
+    <%} %>
+    <%if (cliente.getCep()!=null && cliente.getCep().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>CEP:</b></td>
+    <td align="left"><%=cliente.getCep() %></td>
+    <%} %>
+  </tr>
+  <%} %>
+  <%if (cliente.getCnpj().replaceAll(" ","").equals("")==false  && cliente.getCnpj()!=null || 
+  		cliente.getContato().replaceAll(" ","").equals("")==false  && cliente.getContato()!=null){ %>
+  <tr>
+  	<%if (cliente.getCnpj()!=null && cliente.getCnpj().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>CNPJ:</b></td>
+    <td align="left"><%=cliente.getCnpj() %></td>
+    <%} %>
+    <%if (cliente.getTelefone()!=null && cliente.getTelefone().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Telefone:</b></td>
+    <td align="left"><%=cliente.getTelefone() %></td>
+    <%} %>
+  </tr>
+  <%} %>
+  <%if (cliente.getIe()!=null && cliente.getIe().replaceAll(" ","").equals("")==false  ){ %>
+  <tr>
+    <td><b>Insc. Est.:</b></td>
+    <td align="left"><%=cliente.getIe() %></td>
+  <%} %>
+  <%if (cliente.getContato()!=null && cliente.getContato().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Contato:</b></td>
+    <td align="left"><%=cliente.getContato() %></td>
+  <%} %>
+  </tr>
+  <tr>
+  <%if (cliente.getCob_endereco()!=null && cliente.getCob_endereco().replaceAll(" ","").equals("")==false 
+  		 || cliente.getCob_telefone()!=null && cliente.getCob_telefone().replaceAll(" ","").equals("")==false 
+  		 || cliente.getCidade()!=null && cliente.getCidade().replaceAll(" ","").equals("")==false 
+	     || cliente.getCob_cep()!=null && cliente.getCob_cep().replaceAll(" ","").equals("")==false 
+	     || cliente.getCob_bairro()!=null && cliente.getCob_bairro().replaceAll(" ","").equals("")==false 
+	     || cliente.getCob_email()!=null && cliente.getCob_email().replaceAll(" ","").equals("")==false  ){ %>
+    <td colspan="4" bgcolor="#CCCCCC"><strong>
+      <center>
+        Cobrança
+      </center>
+    </strong></td>
+  </tr>
+  <tr>
+  	<%if (cliente.getCob_endereco()!=null && cliente.getCob_endereco().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Endereço:</b></td>
+    <td align="left"><%=cliente.getCob_endereco() %></td>
+    <%} %>
+    <%if (cliente.getCob_telefone()!=null && cliente.getCob_telefone().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Telefone:</b></td>
+    <td align="left"><%=cliente.getCob_telefone() %></td>
+    <%} %>
+  </tr>
+  <tr>
+  	<%if (cliente.getCob_cidade()!=null && cliente.getCob_cidade().replaceAll(" ","").equals("")==false ){ %>
+    <td><b>Cidade:</b></td>
+    <td align="left"><%=cliente.getCob_cidade() %></td>
+    <%} %>
+    <%if (cliente.getCob_cep()!=null && cliente.getCob_cep().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>CEP:</b></td>
+    <td align="left"><%=cliente.getCob_cep() %></td>
+    <%} %>
+  </tr>
+  <tr>
+  	<%if (cliente.getCob_email()!=null && cliente.getCob_email().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>E-mail para Nfe:</b></td>
+    <td align="left"><%=cliente.getCob_email() %></td>
+    <%} %>
+    <%if (cliente.getCob_estado()!=null && cliente.getCob_estado().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Estado:</b></td>
+    <td align="left"><%=cliente.getCob_estado() %></td>
+    <%} %>
+  </tr>
+  <tr>
+  <%if (cliente.getEnt_endereco()!=null && cliente.getEnt_endereco().replaceAll(" ","").equals("")==false 
+  		|| cliente.getEnt_telefone()!=null && cliente.getEnt_telefone().replaceAll(" ","").equals("")==false 
+  		|| cliente.getEnt_cidade()!=null && cliente.getEnt_cidade().replaceAll(" ","").equals("")==false  
+	    || cliente.getEnt_contato()!=null && cliente.getEnt_contato().replaceAll(" ","").equals("")==false 
+	    || cliente.getEnt_bairro()!=null && cliente.getEnt_bairro().replaceAll(" ","").equals("")==false  
+		|| cliente.getEnt_email()!=null && cliente.getEnt_email().replaceAll(" ","").equals("")==false  ){ %>
+    <td colspan="4" bgcolor="#CCCCCC"><strong>
+      <center>
+        Entrega
+      </center>
+    </strong></td>
+  </tr>
+  <%if (cliente.getTransportadora().replaceAll(" ","").equals("")==false  && cliente.getTransportadora()!=null){%>
+  <tr>
+  	<td><b>Transportadora:</b></td>
+  	<td align="left"><%=cliente.getTransportadora() %></td>
+  </tr>
+  <%}%>
+  <tr>
+  	<%if (cliente.getEnt_endereco().replaceAll(" ","").equals("")==false  && cliente.getEnt_endereco()!=null){
+  	System.out.println("ENDERECO: " + cliente.getEnt_endereco());
+  	 %>
+    <td><b>Endereço:</b></td>
+    <td align="left"><%=cliente.getEnt_endereco() %></td>
+    <%} %>
+    <%if (cliente.getEnt_telefone()!=null && cliente.getEnt_telefone().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Telefone:</b></td>
+    <td align="left"><%=cliente.getEnt_telefone() %></td>
+    <%} %>
+  </tr>
+  <tr>
+  	<%if (cliente.getEnt_cidade()!=null && cliente.getEnt_cidade().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Cidade:</b></td>
+    <td align="left"><%=cliente.getEnt_cidade() %></td>
+    <%} %>
+    <%if (cliente.getEnt_contato()!=null && cliente.getEnt_contato().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Contato:</b></td>
+    <td align="left"><%=cliente.getEnt_contato() %></td>
+    <%}
+    }
+   %>
+  </tr>
+  <tr>
+  	<%if (cliente.getEnt_bairro()!=null && cliente.getEnt_bairro().replaceAll(" ","") .equals("")==false ){ %>
+    <td><b>Bairro:</b></td>
+    <td align="left"><%=cliente.getEnt_bairro() %></td>
+    <%} %>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+  	<%if (cliente.getEnt_email()!=null && cliente.getEnt_email().replaceAll(" ","").equals("")==false  ){ %>
+    <td><b>Email:</b></td>
+    <td align="left"><%=cliente.getEnt_email() %></td>
+    <%} %>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <%} %>
+  <tr>
+    <td colspan="4" bgcolor="#CCCCCC">&nbsp;</td>
+  </tr>
+  <% if (pedido.getCondicaoPagamento().replaceAll(" ","").equals("")==false){ %>
+  <tr >
+    <td><b>Cond. Pagamento:</b></td>
+    <td align="left"><%=pedido.getCondicaoPagamento() %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <%} %>
+  <%if (pedido.getEntrega().replaceAll(" ","").equals("")==false){ %>
+  <tr>
+    <td><b>Entrega:</b></td>
+    <td align="left"><%=pedido.getEntrega() %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <%} %>
+  <%if (desconto.replaceAll(" ","").equals("")==false){ %>
+  <tr>
+    <td><b>Desconto:</b></td>
+    <td align="left"><%=desconto %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <%} %>
+  <%if (pedido.getObservacao().replaceAll(" ","").equals("")==false && pedido.getObservacao()!=null ){ %>
+  <tr>
+    <td><b>Obs:</b></td>
+    <td align="left"><%=pedido.getObservacao() %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <%} %>
+</table>
+<br>
+<table width="905" border="0" align="center">
+  <tr>
+    <td width="219"><strong>
+      <center>
+        Referência
+      </center>
+    </strong></td>
+    </b></b>
+    <td width="196"><strong>
+      <center>
+        Quantidade
+      </center>
+    </strong></td>
+    <td width="221"><strong>
+      <center>
+        Preço 
+      </center>
+    </strong></td>
+    <td width="251"><strong>
+      <center>
+        Total
+      </center>
+    </strong></td>
+  </tr>
+  <%
+  for (Pedido_has_Itens pedhasit : phis){ %>
+  <tr>
+	<%
+		float valora = 0;
+		float totala = 0;
+		ReferenciaDAO refDao = new ReferenciaDAO(); 
+		Referencia referencia = refDao.getReferencia(pedhasit.getIdReferencia());
+		if (pedhasit.getValor()!=0){
+			valora = pedhasit.getValor();
+	  		totala = pedhasit.getValor()*pedhasit.getQuantidade();
+	  	}else{
+	  		valora = referencia.getValor();
+	  		totala = referencia.getValor()*pedhasit.getQuantidade();
+	  	}	  	
+	  	DecimalFormat totalDF = new DecimalFormat( "0.00" );  
+  		String total = totalDF.format(totala);
+  		DecimalFormat preco = new DecimalFormat( "0.000" );  
+  		String valorb = preco.format(valora);
+  		System.out.println(valorb);   
+  		FormataNumero fn = new FormataNumero();
+  		String valor = fn.formatar(valorb);
+  	%>
+    <td align="center"><%=referencia.getReferencia() %></td>
+    <td align="center"><%=pedhasit.getQuantidade() %></td>
+    <td align="center">R$<%=valor %></td>
+    <td align="center">R$<%=total %></td>
+  </tr>
+  <%} %>
+  <tr/>
+  <tr/>
+  <tr>
+  </tr>
+  <tr>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  <center><strong>Total Bruto:</strong></center>
+  </td>
+  <td>
+  <%
+  	double totalBrutoa = pedido.getValorBruto(); 
+  	DecimalFormat totalB = new DecimalFormat( "0.00" );  
+  	String totalBruto = totalB.format(totalBrutoa);   
+  %>
+  <center><strong>R$<%=totalBruto %></strong></center>
+  </td>
+  </tr>
+  <%if(pedido.getValorBruto()!=pedido.getValorLiquido()){%>
+  <tr>
+  <td>
+  </td>
+  <td>
+  </td>
+  <td>
+  <center><strong>Total Líquido:</strong></center>
+  </td>
+  <td>
+  <%
+  double totalLiquidoa = pedido.getValorLiquido(); 
+  	DecimalFormat totalL = new DecimalFormat( "0.00" );  
+  	String totalLiquido = totalL.format(totalLiquidoa);   
+  %>
+  <center><strong>R$<%=totalLiquido %></strong></center>
+  </td>
+  </tr>
+  <%}%>
+</table>
+
+<p>&nbsp;</p>
+
+<a href="modelo2.jsp?idPedido="<%=idPedido %>> Modelo 2 </a>
+			
+</body>
+</html>

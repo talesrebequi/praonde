@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+closed,editor,org.eclipse.ui.browser,3.2.201.v20080708_34x,org.eclipse.ui.browser.editor,1291986446562
+activated,view,org.eclipse.ui.navigator.resources,3.3.101.M20080910-0800,org.eclipse.ui.navigator.ProjectExplorer,1291986452671
+activated,editor,org.eclipse.jst.jsp.ui,1.1.312.v200901290909,org.eclipse.jst.jsp.core.jspsource.source,1291986452906
+opened,editor,org.eclipse.ui.browser,3.2.201.v20080708_34x,org.eclipse.ui.browser.editor,1291986461984
+activated,editor,org.eclipse.ui.browser,3.2.201.v20080708_34x,org.eclipse.ui.browser.editor,1291986462031
+activated,view,org.eclipse.ui.console,3.3.1.v20090128_r342,org.eclipse.ui.console.ConsoleView,1291986493218
+activated,editor,org.eclipse.ui.browser,3.2.201.v20080708_34x,org.eclipse.ui.browser.editor,1291986501156
+activated,editor,org.eclipse.jst.jsp.ui,1.1.312.v200901290909,org.eclipse.jst.jsp.core.jspsource.source,1291986502000
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1291986522406
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.findReplace,1291986522453
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1291986527765
+activated,view,org.eclipse.ui.navigator.resources,3.3.101.M20080910-0800,org.eclipse.ui.navigator.ProjectExplorer,1291986536343
+opened,editor,org.eclipse.jst.jsp.ui,1.1.312.v200901290909,org.eclipse.jst.jsp.core.jspsource.source,1291986537265
+activated,editor,org.eclipse.jst.jsp.ui,1.1.312.v200901290909,org.eclipse.jst.jsp.core.jspsource.source,1291986537343
+activated,view,org.eclipse.ui.navigator.resources,3.3.101.M20080910-0800,org.eclipse.ui.navigator.ProjectExplorer,1291986541140
+opened,editor,org.eclipse.jst.jsp.ui,1.1.312.v200901290909,org.eclipse.jst.jsp.core.jspsource.source,1291986542359
+activated,editor,org.eclipse.jst.jsp.ui,1.1.312.v200901290909,org.eclipse.jst.jsp.core.jspsource.source,1291986542421
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1291986547343
+executed,command,org.eclipse.ui,3.4.2.M20090204-0800,org.eclipse.ui.edit.findReplace,1291986547375
+activated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1291986549437
+activated,view,org.eclipse.ui.navigator.resources,3.3.101.M20080910-0800,org.eclipse.ui.navigator.ProjectExplorer,1291986550578
+activated,editor,org.eclipse.jdt.ui,3.4.2.r342_v20090107-0800,org.eclipse.jdt.ui.CompilationUnitEditor,1291986554484
+activated,view,org.eclipse.ui.navigator.resources,3.3.101.M20080910-0800,org.eclipse.ui.navigator.ProjectExplorer,1291986559000
+activated,editor,org.eclipse.jst.jsp.ui,1.1.312.v200901290909,org.eclipse.jst.jsp.core.jspsource.source,1291986561437
+no handler,command,org.eclipse.datatools.sqltools.result,,org.eclipse.datatools.sqltools.result.removeAllInstances,1291986565015

@@ -1,0 +1,61 @@
+package Servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Dao.Hotel;
+import Dao.HotelDAO;
+
+/**
+ * Servlet implementation class AdicionaContatoServlet
+ */
+public class ListaHotelServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+		throws IOException, ServletException {
+	
+		PrintWriter out = response.getWriter();
+
+		// pegndo os parâmetros do request
+		
+		String classificacao = request.getParameter("classificacao");
+     	String tipo = request.getParameter("tipo");
+     	String regiao = request.getParameter("regiao");
+     	String finalidade = request.getParameter("finalidade");
+     	int cont = Integer.parseInt(request.getParameter("contador"));
+     	int cont2 = Integer.parseInt(request.getParameter("contador2"));
+		
+		int servicos[] = new int[cont];
+		int sitiosTuristicos[] = new int[cont2];
+		
+		for(int i = 0; i<cont; i++){
+			if(request.getParameter("servico"+Integer.toString((i)))!=null){
+				servicos[i] = Integer.parseInt(request.getParameter("servico"+Integer.toString((i))));
+			}
+		}
+		
+		for(int i = 0; i<cont2; i++){
+			if(request.getParameter("sitioTuristico"+Integer.toString((i)))!=null){
+				sitiosTuristicos[i] = Integer.parseInt(request.getParameter("sitioTuristico"+Integer.toString((i))));
+			}
+		}
+		
+		HotelDAO dao = new HotelDAO();
+		List<Hotel> hoteis = dao.getListaPor(classificacao, tipo, regiao, finalidade, servicos, sitiosTuristicos);
+		
+		// imprime o nome do contato que foi adicionado
+		out.println("<html>");
+		out.println("<body>");
+		out.println("OK");
+		out.println("</body>");
+		out.println("</html>");	
+	}	
+}

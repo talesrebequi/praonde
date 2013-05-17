@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Users\Bruno\Desktop\Sistema PraOnde\praonde\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2737202313.index
+3801349649.index
+3305312248.index
+1950228983.index
+2906923665.index

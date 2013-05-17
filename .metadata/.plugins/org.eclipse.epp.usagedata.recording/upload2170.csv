@@ -1,0 +1,376 @@
+what,kind,bundleId,bundleVersion,description,time
+resolved,bundle,org.apache.velocity,1.5.0.v200905192330,"org.apache.velocity",1365009659152
+resolved,bundle,org.eclipse.jpt.gen,1.3.100.v201004260000,"org.eclipse.jpt.gen",1365009659152
+resolved,bundle,org.eclipse.jpt.ui,2.3.2.v201008252310,"org.eclipse.jpt.ui",1365009659169
+resolved,bundle,org.eclipse.jpt.jaxb.ui,1.0.1.v201006300000,"org.eclipse.jpt.jaxb.ui",1365009659172
+resolved,bundle,org.eclipse.jpt.eclipselink.ui,1.3.0.v201004280001,"org.eclipse.jpt.eclipselink.ui",1365009659175
+resolved,bundle,javax.xml.rpc,1.1.0.v201005080400,"javax.xml.rpc",1365009659175
+resolved,bundle,org.apache.axis,1.4.0.v201005080400,"org.apache.axis",1365009659175
+resolved,bundle,org.uddi4j,2.0.5.v200805270300,"org.uddi4j",1365009659176
+resolved,bundle,javax.wsdl,1.5.1.v201005080630,"javax.wsdl",1365009659176
+resolved,bundle,org.eclipse.wst.wsdl.validation,1.1.501.v201004201506,"org.eclipse.wst.wsdl.validation",1365009659184
+resolved,bundle,org.eclipse.wst.wsdl,1.2.104.v201012082239,"org.eclipse.wst.wsdl",1365009659186
+resolved,bundle,org.eclipse.datatools.enablement.oda.ws,1.2.2.v201010151422,"org.eclipse.datatools.enablement.oda.ws",1365009659188
+resolved,bundle,org.eclipse.datatools.enablement.oda.ws.ui,1.2.2.v201012301630,"org.eclipse.datatools.enablement.oda.ws.ui",1365009659190
+resolved,bundle,org.apache.wsil4j,1.0.0.v200901211807,"org.apache.wsil4j",1365009659190
+resolved,bundle,org.eclipse.wst.ws.parser,1.0.403.v201004211805,"org.eclipse.wst.ws.parser",1365009659191
+resolved,bundle,org.eclipse.jst.j2ee.webservice,1.1.400.v201004110600,"org.eclipse.jst.j2ee.webservice",1365009659204
+resolved,bundle,org.eclipse.jst.j2ee.webservice.ui,1.1.400.v201004110600,"org.eclipse.jst.j2ee.webservice.ui",1365009659222
+resolved,bundle,org.eclipse.wst.ws,1.1.203.v201004211805,"org.eclipse.wst.ws",1365009659225
+resolved,bundle,org.eclipse.wst.wsi,1.0.400.v201004220210,"org.eclipse.wst.wsi",1365009659226
+resolved,bundle,org.eclipse.wst.wsi.ui,1.0.501.v201004201506,"org.eclipse.wst.wsi.ui",1365009659228
+resolved,bundle,org.eclipse.wst.ws.ui,1.1.200.v201004211805,"org.eclipse.wst.ws.ui",1365009659230
+resolved,bundle,org.eclipse.wst.wsdl.ui,1.2.304.v201012071645,"org.eclipse.wst.wsdl.ui",1365009659233
+resolved,bundle,org.eclipse.wst.ws.explorer,1.0.507.v201004220342,"org.eclipse.wst.ws.explorer",1365009659235
+resolved,bundle,org.eclipse.jst.ws,1.0.507.v201004211805,"org.eclipse.jst.ws",1365009659236
+resolved,bundle,org.eclipse.jst.ws.ui,1.0.403.v201004211805,"org.eclipse.jst.ws.ui",1365009659237
+resolved,bundle,org.eclipse.jst.ws.uddiregistry,1.0.500.v201004211805,"org.eclipse.jst.ws.uddiregistry",1365009659239
+resolved,bundle,org.eclipse.jst.ws.cxf.core,1.0.0.v201003311345,"org.eclipse.jst.ws.cxf.core",1365009659241
+resolved,bundle,org.eclipse.jst.ws.cxf.ui,1.0.0.v201004171919,"org.eclipse.jst.ws.cxf.ui",1365009659242
+resolved,bundle,org.eclipse.jst.ws.cxf.creation.core,1.0.0.v201003311345,"org.eclipse.jst.ws.cxf.creation.core",1365009659243
+resolved,bundle,org.eclipse.jst.ws.cxf.consumption.core,1.0.0.v201003222311,"org.eclipse.jst.ws.cxf.consumption.core",1365009659244
+resolved,bundle,org.eclipse.jst.ws.consumption,1.0.507.v201004211805,"org.eclipse.jst.ws.consumption",1365009659246
+resolved,bundle,org.eclipse.jst.ws.consumption.ui,1.1.302.v201101191731,"org.eclipse.jst.ws.consumption.ui",1365009659251
+resolved,bundle,org.eclipse.jst.ws.cxf.consumption.ui,1.0.0.v201003222311,"org.eclipse.jst.ws.cxf.consumption.ui",1365009659253
+resolved,bundle,org.eclipse.jst.ws.creation.ui,1.0.510.v201011041151,"org.eclipse.jst.ws.creation.ui",1365009659255
+resolved,bundle,org.eclipse.jst.ws.cxf.creation.ui,1.0.0.v201003311345,"org.eclipse.jst.ws.cxf.creation.ui",1365009659258
+resolved,bundle,org.eclipse.jst.ws.creation.ejb.ui,1.0.201.v201004211805,"org.eclipse.jst.ws.creation.ejb.ui",1365009659259
+resolved,bundle,org.eclipse.jst.ws.axis2.core,1.0.204.v201004211805,"org.eclipse.jst.ws.axis2.core",1365009659261
+resolved,bundle,org.eclipse.jst.ws.axis2.ui,1.0.303.v201003110431,"org.eclipse.jst.ws.axis2.ui",1365009659262
+resolved,bundle,org.eclipse.jst.ws.axis2.consumption.core,1.0.105.v201004211805,"org.eclipse.jst.ws.axis2.consumption.core",1365009659263
+resolved,bundle,org.eclipse.jst.ws.axis2.creation.core,1.0.106.v201004211805,"org.eclipse.jst.ws.axis2.creation.core",1365009659263
+resolved,bundle,org.eclipse.jst.ws.axis2.consumption.ui,1.0.103.v201004211805,"org.eclipse.jst.ws.axis2.consumption.ui",1365009659264
+resolved,bundle,org.eclipse.jst.ws.axis2.creation.ui,1.0.104.v201004211805,"org.eclipse.jst.ws.axis2.creation.ui",1365009659266
+resolved,bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.406.v201004211805,"org.eclipse.jst.ws.axis.consumption.core",1365009659267
+resolved,bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.505.v201004211805,"org.eclipse.jst.ws.axis.consumption.ui",1365009659269
+resolved,bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.600.v201008171516,"org.eclipse.jst.ws.axis.creation.ui",1365009659271
+started,bundle,org.eclipse.wst.xml.xpath2.processor,1.1.4.v201101212357,"org.eclipse.wst.xml.xpath2.processor",1365009664283
+started,bundle,org.eclipse.wst.xml.core,1.1.503.v201102102045,"org.eclipse.wst.xml.core",1365009664359
+started,bundle,org.eclipse.wst.xsd.core,1.1.503.v201011121919,"org.eclipse.wst.xsd.core",1365009664374
+started,bundle,org.eclipse.wst.xml.ui,1.1.103.v201101122108,"org.eclipse.wst.xml.ui",1365009664380
+started,bundle,org.eclipse.wst.dtd.core,1.1.401.v201101122255,"org.eclipse.wst.dtd.core",1365009664404
+started,bundle,org.eclipse.php.core,2.2.1.v20101001-2300,"org.eclipse.php.core",1365009664441
+started,bundle,org.eclipse.php.server.core,2.2.0.v20101001-2300,"org.eclipse.php.server.core",1365009664452
+started,bundle,org.eclipse.wst.html.ui,1.0.504.v201101122108,"org.eclipse.wst.html.ui",1365009664468
+started,bundle,org.eclipse.php.ui,2.2.1.v20101001-2300,"org.eclipse.php.ui",1365009664491
+started,bundle,org.eclipse.php.debug.core,2.2.0.v20101001-2300,"org.eclipse.php.debug.core",1365009664833
+started,bundle,org.eclipse.php.debug.ui,2.2.0.v20101001-2300,"org.eclipse.php.debug.ui",1365009664856
+started,bundle,org.eclipse.jst.ws.jaxws.ui,1.0.1.v201008232129,"org.eclipse.jst.ws.jaxws.ui",1365009664873
+started,bundle,org.eclipse.jst.jsp.core,1.2.304.v201102160550,"org.eclipse.jst.jsp.core",1365009664917
+started,bundle,org.eclipse.jst.jsp.ui,1.1.503.v201101262228,"org.eclipse.jst.jsp.ui",1365009664936
+started,bundle,org.eclipse.jst.j2ee.core,1.2.4.v201102101900,"org.eclipse.jst.j2ee.core",1365009664956
+started,bundle,org.eclipse.jst.j2ee,1.1.404.v201102081800,"org.eclipse.jst.j2ee",1365009665052
+started,bundle,org.eclipse.jst.j2ee.jca,1.1.400.v201005270700,"org.eclipse.jst.j2ee.jca",1365009665070
+started,bundle,org.eclipse.jst.jee,1.0.302.v201101122300,"org.eclipse.jst.jee",1365009665076
+started,bundle,org.eclipse.jst.j2ee.web,1.1.404.v201102030400,"org.eclipse.jst.j2ee.web",1365009665087
+started,bundle,org.eclipse.jst.ws.jaxrs.core,1.0.201.v201011231540,"org.eclipse.jst.ws.jaxrs.core",1365009665097
+started,bundle,org.eclipse.jst.jsf.common,1.2.2.v201101211220,"org.eclipse.jst.jsf.common",1365009665120
+started,bundle,org.eclipse.jst.jsf.core,1.3.3.v201102021253,"org.eclipse.jst.jsf.core",1365009665146
+started,bundle,org.eclipse.jst.jee.web,1.0.301.v201007070907,"org.eclipse.jst.jee.web",1365009665161
+started,bundle,org.eclipse.jst.j2ee.ejb,1.1.402.v201102071010,"org.eclipse.jst.j2ee.ejb",1365009665184
+started,bundle,org.eclipse.jst.jee.ejb,1.0.301.v201007070821,"org.eclipse.jst.jee.ejb",1365009665204
+started,bundle,org.eclipse.jst.j2ee.ui,1.1.404.v201101122300,"org.eclipse.jst.j2ee.ui",1365009665219
+started,bundle,org.eclipse.jst.j2ee.navigator.ui,1.1.403.v201012020600,"org.eclipse.jst.j2ee.navigator.ui",1365009665233
+started,bundle,org.eclipse.jst.jee.ui,1.0.304.v201101272100,"org.eclipse.jst.jee.ui",1365009665238
+started,bundle,org.eclipse.jst.ws.jaxws.dom.integration,1.0.0.v201004171919,"org.eclipse.jst.ws.jaxws.dom.integration",1365009665243
+started,bundle,org.eclipse.jst.servlet.ui,1.1.404.v201101270100,"org.eclipse.jst.servlet.ui",1365009665266
+started,bundle,org.eclipse.wst.xsl.core,1.1.0.v201004290328,"org.eclipse.wst.xsl.core",1365009665305
+started,bundle,org.eclipse.wst.xml.xpath.ui,1.1.2.v201101212242,"org.eclipse.wst.xml.xpath.ui",1365009665310
+started,bundle,org.eclipse.wst.wsdl.validation,1.1.501.v201004201506,"org.eclipse.wst.wsdl.validation",1365009665367
+started,bundle,org.eclipse.jst.j2ee.webservice,1.1.400.v201004110600,"org.eclipse.jst.j2ee.webservice",1365009665390
+started,bundle,org.eclipse.jst.j2ee.webservice.ui,1.1.400.v201004110600,"org.eclipse.jst.j2ee.webservice.ui",1365009665407
+started,bundle,org.eclipse.wst.ws,1.1.203.v201004211805,"org.eclipse.wst.ws",1365009665413
+error,log,,,"Unhandled event loop exception",1365009665444
+error,log,,,"Unhandled event loop exception",1365009665526
+error,log,,,"Unhandled event loop exception",1365009665533
+error,log,,,"Unhandled event loop exception",1365009665539
+error,log,,,"Unhandled event loop exception",1365009665543
+error,log,,,"Unhandled event loop exception",1365009665575
+error,log,,,"Unhandled event loop exception",1365009665580
+error,log,,,"Unhandled event loop exception",1365009665584
+error,log,,,"Unhandled event loop exception",1365009665588
+error,log,,,"Unhandled event loop exception",1365009665593
+error,log,,,"Invalid registry object",1365009665599
+error,log,,,"Unhandled event loop exception",1365009665603
+error,log,,,"Unhandled event loop exception",1365009665607
+error,log,,,"Invalid registry object",1365009665610
+error,log,,,"Unhandled event loop exception",1365009665689
+error,log,,,"Invalid registry object",1365009665692
+error,log,,,"Invalid registry object",1365009665696
+error,log,,,"Unhandled event loop exception",1365009665698
+error,log,,,"Unhandled event loop exception",1365009665702
+started,bundle,com.objectaid.uml,1.1.2,"com.objectaid.uml",1365009666802
+error,log,,,"Unhandled event loop exception",1365009666807
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$1.doRemove: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1365009667255
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$1.doRemove: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1365009667258
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667312
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667316
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667319
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667322
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667325
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667328
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667331
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667334
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667337
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667340
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667343
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667347
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667349
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667352
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667354
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667357
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667360
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667362
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667365
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667368
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667371
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667374
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667403
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667407
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667410
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667412
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667415
+error,log,,,"Undefined context while filtering dialog/window contexts",1365009667418
+error,log,,,"Unhandled event loop exception",1365009667447
+error,log,,,"Invalid registry object",1365009667628
+error,log,,,"Invalid registry object",1365009667631
+error,log,,,"Invalid registry object",1365009667635
+error,log,,,"Invalid registry object",1365009667639
+error,log,,,"Invalid registry object",1365009667676
+error,log,,,"Invalid registry object",1365009667679
+error,log,,,"Invalid registry object",1365009667683
+error,log,,,"Invalid registry object",1365009667687
+error,log,,,"Invalid registry object",1365009667705
+error,log,,,"Invalid registry object",1365009667708
+error,log,,,"Invalid registry object",1365009667712
+error,log,,,"Invalid registry object",1365009667715
+error,log,,,"Invalid registry object",1365009667741
+error,log,,,"Invalid registry object",1365009667745
+error,log,,,"Invalid registry object",1365009667749
+error,log,,,"Invalid registry object",1365009667753
+error,log,,,"Invalid registry object",1365009667774
+error,log,,,"Invalid registry object",1365009667779
+error,log,,,"Invalid registry object",1365009667783
+error,log,,,"Invalid registry object",1365009667787
+error,log,,,"Invalid registry object",1365009667811
+error,log,,,"Invalid registry object",1365009667815
+error,log,,,"Invalid registry object",1365009667820
+error,log,,,"Invalid registry object",1365009667823
+error,log,,,"Invalid registry object",1365009667830
+error,log,,,"Invalid registry object",1365009667834
+error,log,,,"Invalid registry object",1365009667839
+error,log,,,"Invalid registry object",1365009667844
+error,log,,,"Invalid registry object",1365009667859
+error,log,,,"Invalid registry object",1365009667863
+error,log,,,"Invalid registry object",1365009667868
+error,log,,,"Invalid registry object",1365009667873
+started,bundle,com.objectaid.uml.seq,1.1.2,"com.objectaid.uml.seq",1365009667889
+error,log,,,"Invalid registry object",1365009667902
+error,log,,,"Invalid registry object",1365009667907
+error,log,,,"Invalid registry object",1365009667915
+error,log,,,"Invalid registry object",1365009667919
+started,bundle,org.eclipse.gef,3.7.0.v20110407-2050,"org.eclipse.gef",1365009667926
+error,log,,,"Invalid registry object",1365009667950
+error,log,,,"Invalid registry object",1365009667954
+error,log,,,"Invalid registry object",1365009667959
+error,log,,,"Invalid registry object",1365009667963
+started,bundle,com.objectaid.uml.cls,1.1.2,"com.objectaid.uml.cls",1365009667973
+error,log,,,"Invalid registry object",1365009667987
+error,log,,,"Invalid registry object",1365009667990
+error,log,,,"Invalid registry object",1365009667996
+error,log,,,"Invalid registry object",1365009668000
+error,log,,,"Invalid registry object",1365009668014
+error,log,,,"Invalid registry object",1365009668018
+error,log,,,"Invalid registry object",1365009668023
+error,log,,,"Invalid registry object",1365009668027
+error,log,,,"Invalid registry object",1365009668077
+error,log,,,"Invalid registry object",1365009668081
+error,log,,,"Invalid registry object",1365009668086
+error,log,,,"Invalid registry object",1365009668089
+error,log,,,"Invalid registry object",1365009668126
+error,log,,,"Invalid registry object",1365009668130
+error,log,,,"Invalid registry object",1365009668134
+error,log,,,"Invalid registry object",1365009668137
+error,log,,,"Invalid registry object",1365009668162
+error,log,,,"Invalid registry object",1365009668165
+error,log,,,"Invalid registry object",1365009668169
+error,log,,,"Invalid registry object",1365009668172
+error,log,,,"Invalid registry object",1365009668215
+error,log,,,"Invalid registry object",1365009668219
+error,log,,,"Invalid registry object",1365009668224
+error,log,,,"Invalid registry object",1365009668228
+error,log,,,"Invalid registry object",1365009668236
+error,log,,,"Invalid registry object",1365009668240
+error,log,,,"Invalid registry object",1365009668245
+error,log,,,"Invalid registry object",1365009668249
+error,log,,,"Invalid registry object",1365009668277
+error,log,,,"Invalid registry object",1365009668281
+error,log,,,"Invalid registry object",1365009668286
+error,log,,,"Invalid registry object",1365009668290
+error,log,,,"Invalid registry object",1365009668307
+error,log,,,"Invalid registry object",1365009668311
+error,log,,,"Invalid registry object",1365009668315
+error,log,,,"Invalid registry object",1365009668320
+error,log,,,"Invalid registry object",1365009668348
+error,log,,,"Invalid registry object",1365009668351
+error,log,,,"Invalid registry object",1365009668355
+error,log,,,"Invalid registry object",1365009668359
+error,log,,,"Invalid registry object",1365009668372
+error,log,,,"Invalid registry object",1365009668376
+error,log,,,"Invalid registry object",1365009668380
+error,log,,,"Invalid registry object",1365009668383
+error,log,,,"Invalid registry object",1365009668389
+error,log,,,"Invalid registry object",1365009668393
+error,log,,,"Invalid registry object",1365009668397
+error,log,,,"Invalid registry object",1365009668400
+error,log,,,"Invalid registry object",1365009668418
+error,log,,,"Invalid registry object",1365009668422
+error,log,,,"Invalid registry object",1365009668426
+error,log,,,"Invalid registry object",1365009668430
+error,log,,,"Invalid registry object",1365009668448
+error,log,,,"Invalid registry object",1365009668452
+error,log,,,"Invalid registry object",1365009668457
+error,log,,,"Invalid registry object",1365009668461
+error,log,,,"Invalid registry object",1365009668489
+error,log,,,"Invalid registry object",1365009668493
+error,log,,,"Invalid registry object",1365009668498
+error,log,,,"Invalid registry object",1365009668502
+error,log,,,"Invalid registry object",1365009668508
+error,log,,,"Invalid registry object",1365009668511
+error,log,,,"Invalid registry object",1365009668516
+error,log,,,"Invalid registry object",1365009668519
+error,log,,,"Invalid registry object",1365009668555
+error,log,,,"Invalid registry object",1365009668558
+error,log,,,"Invalid registry object",1365009668562
+error,log,,,"Invalid registry object",1365009668566
+error,log,,,"Invalid registry object",1365009668607
+error,log,,,"Invalid registry object",1365009668610
+error,log,,,"Invalid registry object",1365009668614
+error,log,,,"Invalid registry object",1365009668617
+error,log,,,"Invalid registry object",1365009668624
+error,log,,,"Invalid registry object",1365009668627
+error,log,,,"Invalid registry object",1365009668632
+error,log,,,"Invalid registry object",1365009668636
+error,log,,,"Invalid registry object",1365009668672
+error,log,,,"Invalid registry object",1365009668676
+error,log,,,"Invalid registry object",1365009668680
+error,log,,,"Invalid registry object",1365009668683
+error,log,,,"Invalid registry object",1365009668723
+error,log,,,"Invalid registry object",1365009668726
+error,log,,,"Invalid registry object",1365009668730
+error,log,,,"Invalid registry object",1365009668734
+error,log,,,"Invalid registry object",1365009668756
+error,log,,,"Invalid registry object",1365009668759
+error,log,,,"Invalid registry object",1365009668790
+error,log,,,"Invalid registry object",1365009668793
+error,log,,,"Invalid registry object",1365009668819
+error,log,,,"Invalid registry object",1365009668822
+error,log,,,"Invalid registry object",1365009668826
+error,log,,,"Invalid registry object",1365009668829
+error,log,,,"Invalid registry object",1365009668835
+error,log,,,"Invalid registry object",1365009668839
+error,log,,,"Invalid registry object",1365009668843
+error,log,,,"Invalid registry object",1365009668847
+error,log,,,"Invalid registry object",1365009668878
+error,log,,,"Invalid registry object",1365009668881
+error,log,,,"Invalid registry object",1365009668885
+error,log,,,"Invalid registry object",1365009668889
+error,log,,,"Invalid registry object",1365009668895
+error,log,,,"Invalid registry object",1365009668899
+error,log,,,"Invalid registry object",1365009668902
+error,log,,,"Invalid registry object",1365009668906
+error,log,,,"Invalid registry object",1365009668923
+error,log,,,"Invalid registry object",1365009668927
+error,log,,,"Invalid registry object",1365009668931
+error,log,,,"Invalid registry object",1365009668935
+error,log,,,"Invalid registry object",1365009668941
+error,log,,,"Invalid registry object",1365009668945
+error,log,,,"Invalid registry object",1365009668949
+error,log,,,"Invalid registry object",1365009668952
+error,log,,,"Invalid registry object",1365009668969
+error,log,,,"Invalid registry object",1365009668972
+error,log,,,"Invalid registry object",1365009668976
+error,log,,,"Invalid registry object",1365009668980
+error,log,,,"Invalid registry object",1365009669021
+error,log,,,"Invalid registry object",1365009669025
+error,log,,,"Invalid registry object",1365009669029
+error,log,,,"Invalid registry object",1365009669033
+error,log,,,"Invalid registry object",1365009669044
+error,log,,,"Invalid registry object",1365009669048
+error,log,,,"Invalid registry object",1365009669052
+error,log,,,"Invalid registry object",1365009669055
+error,log,,,"Invalid registry object",1365009669072
+error,log,,,"Invalid registry object",1365009669075
+error,log,,,"Invalid registry object",1365009669079
+error,log,,,"Invalid registry object",1365009669082
+error,log,,,"Invalid registry object",1365009669113
+error,log,,,"Invalid registry object",1365009669117
+error,log,,,"Invalid registry object",1365009669121
+error,log,,,"Invalid registry object",1365009669125
+error,log,,,"Invalid registry object",1365009669147
+error,log,,,"Invalid registry object",1365009669150
+error,log,,,"Invalid registry object",1365009669155
+error,log,,,"Invalid registry object",1365009669158
+error,log,,,"Invalid registry object",1365009669179
+error,log,,,"Invalid registry object",1365009669182
+error,log,,,"Invalid registry object",1365009669186
+error,log,,,"Invalid registry object",1365009669190
+error,log,,,"Invalid registry object",1365009669203
+error,log,,,"Invalid registry object",1365009669207
+error,log,,,"Invalid registry object",1365009669211
+error,log,,,"Invalid registry object",1365009669214
+error,log,,,"Invalid registry object",1365009669230
+error,log,,,"Invalid registry object",1365009669232
+error,log,,,"Invalid registry object",1365009669236
+error,log,,,"Invalid registry object",1365009669239
+error,log,,,"Invalid registry object",1365009669251
+error,log,,,"Invalid registry object",1365009669255
+error,log,,,"Invalid registry object",1365009669258
+error,log,,,"Invalid registry object",1365009669262
+error,log,,,"Invalid registry object",1365009669280
+error,log,,,"Invalid registry object",1365009669283
+error,log,,,"Invalid registry object",1365009669287
+error,log,,,"Invalid registry object",1365009669290
+error,log,,,"Invalid registry object",1365009669312
+error,log,,,"Invalid registry object",1365009669316
+error,log,,,"Invalid registry object",1365009669321
+error,log,,,"Invalid registry object",1365009669324
+error,log,,,"Invalid registry object",1365009669347
+error,log,,,"Invalid registry object",1365009669351
+error,log,,,"Invalid registry object",1365009669355
+error,log,,,"Invalid registry object",1365009669360
+error,log,,,"Invalid registry object",1365009669371
+error,log,,,"Invalid registry object",1365009669375
+error,log,,,"Invalid registry object",1365009669380
+error,log,,,"Invalid registry object",1365009669384
+error,log,,,"Invalid registry object",1365009669404
+error,log,,,"Invalid registry object",1365009669408
+error,log,,,"Invalid registry object",1365009669413
+error,log,,,"Invalid registry object",1365009669417
+error,log,,,"Invalid registry object",1365009669444
+error,log,,,"Invalid registry object",1365009669447
+error,log,,,"Invalid registry object",1365009669451
+error,log,,,"Invalid registry object",1365009669455
+error,log,,,"Invalid registry object",1365009669477
+error,log,,,"Invalid registry object",1365009669480
+error,log,,,"Invalid registry object",1365009669484
+error,log,,,"Invalid registry object",1365009669487
+error,log,,,"Unhandled event loop exception",1365009669522
+error,log,,,"Unhandled event loop exception",1365009669561
+error,log,,,"Unhandled event loop exception",1365009669623
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$1.doRemove: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1365009670771
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$1.doRemove: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1365009670775
+error,log,,,"Unhandled event loop exception",1365009670862
+error,log,,,"Unhandled event loop exception",1365009671418
+error,log,,,"Unhandled event loop exception",1365009671493
+error,log,,,"Unhandled event loop exception",1365009671552
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1365009671633
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1365009671712
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1365009671743
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1365009672024
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1365009672274
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1365009672283
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$1.doRemove: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1365009672617
+error,log,,,"Exception in org.eclipse.ui.internal.registry.UIExtensionTracker$1.doRemove: org.eclipse.core.runtime.InvalidRegistryObjectException: Invalid registry object",1365009672620
+error,log,,,"An internal error occurred during: ""Decoration Calculation"".",1365009672623
+error,log,,,"Problems occurred when invoking code from plug-in: ""org.eclipse.jface"".",1365009672687

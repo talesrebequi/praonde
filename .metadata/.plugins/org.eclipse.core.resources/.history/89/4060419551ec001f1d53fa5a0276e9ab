@@ -1,0 +1,53 @@
+package Servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Dao.HotelDAO;
+import Dao.Usuario;
+import Dao.UsuarioDAO;
+
+/**
+ * Servlet implementation class AdicionaContatoServlet
+ */
+public class AdicionaUsuarioServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+		throws IOException, ServletException {
+	
+		PrintWriter out = response.getWriter();
+
+		// pegndo os parâmetros do request
+		String nome = request.getParameter("nome");
+		int idFinalidade = Integer.parseInt(request.getParameter("idFinalidade"));
+		int idRegiao = Integer.parseInt(request.getParameter("idRegiao"));
+		double valorMax = Double.valueOf(request.getParameter("valorMax"));
+
+		// monta um objeto hotel
+		Usuario u = new Usuario();
+		u.setNomeUsuario(nome);
+		u.setRegiao_idRegiao(idRegiao);
+		u.setFinalidade_idFinalidade(idFinalidade);
+		u.setValorMax(valorMax);
+		
+		// salva o contato
+		UsuarioDAO dao = new UsuarioDAO();
+		dao.adiciona(u);
+
+		UsuarioDAO dao2 = new UsuarioDAO();
+		int idUsuario = dao2.getLast();
+		
+		// imprime o nome do contato que foi adicionado
+		out.println("<html>");
+		out.println("<body>");
+		out.println("<meta http-equiv=\"refresh\" content=\"1; url=adiciona_shu.jsp?idusuario="+idUsuario+"\">");
+		out.println("</body>");
+		out.println("</html>");
+	}	
+}

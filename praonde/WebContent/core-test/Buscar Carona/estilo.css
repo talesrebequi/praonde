@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+label.inputStart,label.inputEnd,.revRoute,.inputAdd{ 
+    background-image: url('images/sprite.png'); 
+	background-repeat:no-repeat; 
+}
+#mapa { 
+    width:940px; 
+	height: 500px; 
+}
+.form{
+	padding:10px 0 10px 10px;	
+}  
+input.text {
+	font-size:12px;
+	margin-bottom:5px;
+	outline:medium none;
+	padding:5px;
+	text-indent:5px;
+	width:300px;
+}  
+.revRoute{
+	margin:18px 5px 0 0;
+	width:18px;
+	height:18px;
+	float: left;
+	border:0;
+	background-position:0 -32px; 
+	cursor :pointer ;
+}
+label{
+	float:left;
+	display:block;
+	width:16px;
+	height:16px; 
+	margin:5px 5px 0 0;
+}
+.inputStart{
+	background-position:0 -50px;
+}
+.inputEnd{
+	background-position:0 -50px;
+}
+.inputAdd{
+	background-position:0 -50px;
+}
+.left{
+	float:left;
+} 
+.addInput{
+	margin-left:20px;
+}
+.close{ 
+    cursor:pointer;
+	width:22px; 
+	height:22px; 
+	background:transparent url('images/close.png') 
+	no-repeat;  
+	border:0; 
+}
+.ui-autocomplete { 
+	background: #fff; 
+	border-top: 1px solid #ccc;
+	cursor: pointer; 
+	font: 15px 'Open Sans',Arial;
+	margin-left: 3px;
+	width: 493px !important;
+	position: fixed;
+}
+
+.ui-autocomplete .ui-menu-item { 
+	list-style: none outside none;
+	padding: 7px 0 9px 10px;
+}
+
+.ui-autocomplete .ui-menu-item:hover { background: #eee }
+
+.ui-autocomplete .ui-corner-all { 
+	color: #666 !important;
+	display: block;
+}

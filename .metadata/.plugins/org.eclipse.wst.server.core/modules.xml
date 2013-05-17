@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:hic" serverId="Tomcat v6.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:breadExpress" serverId="Tomcat v6.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:praonde" serverId="Tomcat v6.0 Server at localhost (2)"/>
+  <module moduleId="org.eclipse.jst.jee.server:hotel" serverId="Tomcat v6.0 Server at localhost"/>
+</modules>

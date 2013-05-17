@@ -1,0 +1,99 @@
+package Dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Hotel_has_SitioTuristicoDAO {
+	// a conexão com o banco de dados
+	private Connection connection;
+    public ConnectionFactory conexta;
+	
+	public Hotel_has_SitioTuristicoDAO() {
+		this.connection = new ConnectionFactory().getConnection();	
+	}
+	
+	public void adiciona(Hotel_has_SitioTuristico hhs) {
+		String sql = "insert into Hotel_has_SitioTuristico ( idhhst,idHotel,idSitioTuristico) values (?,?,?)";
+		try {	
+			// prepared statement para inserção		
+			PreparedStatement stmt = connection.prepareStatement(sql);			
+			
+			// seta os valores
+			stmt.setInt(1,hhs.getIdhhst());
+			stmt.setInt(2,hhs.getIdHotel());
+			stmt.setInt(3,hhs.getIdSitioTuristico());
+						// executa
+			stmt.execute();
+			stmt.close();
+			connection.close();
+			
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}		
+	}
+	
+	public void remove (int ids[]){
+		String auxiliar="";
+		for (int i=0; i<ids.length; i++){
+			if(auxiliar=="" && ids[i]!=0){
+				auxiliar= Integer.toString(ids[i]);
+			}else if (ids[i]!=0){
+				auxiliar=auxiliar+ ", " + Integer.toString(ids[i]);
+			}
+		}
+		System.out.println("Auxiliar: " + auxiliar);
+		String sql = "delete from Hotel_has_SitioTuristico where idhhs in("+auxiliar+")";
+		try{
+			PreparedStatement stmt = connection.prepareStatement(sql);			
+			stmt.execute();
+			stmt.close();
+			connection.close();
+		}catch (SQLException e){
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public List<Hotel_has_SitioTuristico> getLista(){
+		try{
+			List<Hotel_has_SitioTuristico> hhss = new ArrayList<Hotel_has_SitioTuristico>();
+			PreparedStatement stmt = this.connection.prepareStatement("select * from hotel_has_sitioturistico");
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()){
+				Hotel_has_SitioTuristico hhs = new Hotel_has_SitioTuristico();
+ 				hhs.setIdhhst(Integer.parseInt(rs.getString("idhhst")));
+				hhs.setIdHotel((rs.getInt("idHotel")));
+				hhs.setIdSitioTuristico(rs.getInt("idSitioTuristico"));
+				hhss.add(hhs);
+			}
+			rs.close();
+			stmt.close();
+			return hhss;
+		}catch (SQLException e){
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public List<SitioTuristico> getSitios(int idHotel){
+		try{
+			List<SitioTuristico> sitiosTuristicos = new ArrayList<SitioTuristico>();
+			PreparedStatement stmt = this.connection.prepareStatement("select * from hotel_has_sitioturistico as hhs inner join sitioturistico on (hhs.SitioTuristico_idSitioTuristico = sitioturistico.idSitioTuristico) where hhs.Hotel_idHotel =" + idHotel);
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()){
+				SitioTuristico st = new SitioTuristico();
+				st.setNomeSitio(rs.getString("nomeSitio"));
+				sitiosTuristicos.add(st);
+			}
+			rs.close();
+			stmt.close();
+			return sitiosTuristicos;
+		}catch(SQLException e){
+			throw new RuntimeException(e);
+		}
+	}	
+	
+}

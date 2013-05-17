@@ -1,0 +1,219 @@
+package Dao;
+
+import java.sql.*;
+import java.util.ArrayList;
+
+import Utilities.Conexao;
+import Dao.Usuario;
+import Dao_OLD.ConnectionFactory;
+
+public class PreferenciaDAO {
+    private static PreparedStatement pstmt = null;
+    private static ResultSet rs = null;
+	private Connection connection;
+    public ConnectionFactory conexta;
+	
+	public PreferenciaDAO() {
+		this.connection = new ConnectionFactory().getConnection();	
+	}
+	
+    public void adiciona(Preferencia pref) {
+		String sql = "INSERT INTO preferencias (idPreferencia, descricao) "+
+                    "Values(?,?)";
+		try {	
+			// prepared statement para inserção		
+			PreparedStatement stmt = connection.prepareStatement(sql);						
+			// seta os valores
+			stmt.setInt(1, usuario.getIdUsuario());
+            stmt.setString(2, usuario.getEmail());
+            stmt.setString(3,usuario.getNome());
+            stmt.setString(4, usuario.getEndereco());
+            stmt.setInt(5, usuario.getCpf());
+            stmt.setString(6, usuario.getNascimento());
+            stmt.setString(7, usuario.getPais());
+            stmt.setString(8, usuario.getCidade());
+            stmt.setString(9, usuario.getSenha());
+            stmt.setString(10, usuario.getTelefone());
+            stmt.setString(11, usuario.getCelular());
+            stmt.setString(12, usuario.getFoto());
+            stmt.setInt(13, usuario.getRating());
+            stmt.setString(14, usuario.getPergunta());
+            stmt.setString(15, usuario.getResposta());
+            
+			
+			// executa
+			stmt.execute();
+			stmt.close();
+			connection.close();
+			
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}		
+	}
+    
+    public static boolean update(Usuario usuario) {
+        try {
+        	pstmt = Conexao.getConnection().prepareStatement(
+                    "Update usuarios Set email=?, nome=?, endereco=?, cpf=?, nascimento=?," +
+                    "pais=?,cidade=?,senha=?,telefone=?,celular=?,foto=?,rating=?,pergunta=?,resposta=?" +
+                    " where idUsuario = ?");
+            pstmt.setString(1, usuario.getEmail());            
+            pstmt.setString(2, usuario.getNome());
+            pstmt.setString(3, usuario.getEndereco());
+            pstmt.setInt(4, usuario.getCpf());
+            pstmt.setString(5, usuario.getNascimento());
+            pstmt.setString(6, usuario.getPais());
+            pstmt.setString(7, usuario.getCidade());
+            pstmt.setString(8, usuario.getSenha());
+            pstmt.setString(9, usuario.getTelefone());
+            pstmt.setString(10, usuario.getCelular());
+            pstmt.setString(11, usuario.getFoto());
+            pstmt.setInt(12, usuario.getRating());
+            pstmt.setString(13, usuario.getPergunta());
+            pstmt.setString(14, usuario.getResposta());
+            pstmt.executeUpdate();
+            pstmt.close();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    
+    public static boolean delete(Usuario usuario) {
+        try {
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Delete From usuarios Where idUsuario = ?");
+            pstmt.setInt(1, usuario.getIdUsuario());
+            pstmt.executeUpdate();
+            pstmt.close();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    
+    public static ArrayList<Usuario> getAll() {
+        try {
+            ArrayList<Usuario> listAll = null;
+            Usuario usuario = new Usuario();
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Select * From usuarios Order By email");
+            rs = pstmt.executeQuery();
+            if (rs.next()) {
+                listAll = new ArrayList<Usuario>();
+                do {
+                    usuario = new Usuario();
+                    usuario.setIdUsuario(rs.getInt("idUsuario"));
+                    usuario.setSenha(rs.getString("Senha"));
+                    usuario.setNome(rs.getString("nome"));
+                    usuario.setEndereco(rs.getString("endereco"));
+                    usuario.setCpf(rs.getInt("cpf"));
+                    usuario.setNascimento(rs.getString("nascimento"));
+                    usuario.setPais(rs.getString("pais"));
+                    usuario.setCidade(rs.getString("cidade"));
+                    usuario.setTelefone(rs.getString("telefone"));
+                    usuario.setCelular(rs.getString("celular"));
+                    usuario.setEmail(rs.getString("email"));
+                    usuario.setRating(rs.getInt("rating"));
+                    usuario.setPergunta(rs.getString("pergunta"));
+                    usuario.setResposta(rs.getString("resposta"));
+                    usuario.setFoto(rs.getString("foto"));
+                    listAll.add(usuario);
+                } while (rs.next());
+            }
+            rs.close();
+            pstmt.close();
+            return listAll;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    
+    public static Usuario getById(int Id) {
+        try {
+            Usuario usuario = null;
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Select * From Usuario Where CodUsuario = ?");
+            pstmt.setInt(1, Id);
+            rs = pstmt.executeQuery();
+            if (rs.next()) {
+                usuario = new Usuario();
+                usuario.setIdUsuario(rs.getInt("idUsuario"));
+                usuario.setSenha(rs.getString("Senha"));
+                usuario.setNome(rs.getString("nome"));
+                usuario.setEndereco(rs.getString("endereco"));
+                usuario.setCpf(rs.getInt("cpf"));
+                usuario.setNascimento(rs.getString("nascimento"));
+                usuario.setPais(rs.getString("pais"));
+                usuario.setCidade(rs.getString("cidade"));
+                usuario.setTelefone(rs.getString("telefone"));
+                usuario.setCelular(rs.getString("celular"));
+                usuario.setEmail(rs.getString("email"));
+                usuario.setRating(rs.getInt("rating"));
+                usuario.setPergunta(rs.getString("pergunta"));
+                usuario.setResposta(rs.getString("resposta"));
+                usuario.setFoto(rs.getString("foto"));
+            }
+            rs.close();
+            pstmt.close();
+            return usuario;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    
+    public static Usuario getUserLogin(String email, String senha){
+        try {
+            Usuario usuario = null;
+            
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Select * From usuarios Where email=? AND senha=?");
+            pstmt.setString(1, email);
+            pstmt.setString(2, senha);
+            rs = pstmt.executeQuery();
+            if(rs.next()){
+            	usuario = new Usuario();
+                usuario.setIdUsuario(rs.getInt("idUsuario"));
+                usuario.setSenha(rs.getString("Senha"));
+                usuario.setNome(rs.getString("nome"));
+                usuario.setEndereco(rs.getString("endereco"));
+                usuario.setCpf(rs.getInt("cpf"));
+                usuario.setNascimento(rs.getString("nascimento"));
+                usuario.setPais(rs.getString("pais"));
+                usuario.setCidade(rs.getString("cidade"));
+                usuario.setTelefone(rs.getString("telefone"));
+                usuario.setCelular(rs.getString("celular"));
+                usuario.setEmail(rs.getString("email"));
+                usuario.setRating(rs.getInt("rating"));
+                usuario.setPergunta(rs.getString("pergunta"));
+                usuario.setResposta(rs.getString("resposta"));
+                usuario.setFoto(rs.getString("foto"));
+            }
+            
+            return usuario;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }        
+    }
+            
+	public int getLast() {
+		try{
+			int id = 0;
+			PreparedStatement stmt = this.connection.prepareStatement("SELECT MAX( idUsuario ) as idUsuario FROM usuarios");
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next())
+			id = rs.getInt("idUsuario");
+			rs.close();
+			stmt.close();
+			return id;
+		}catch (SQLException e){
+		throw new RuntimeException(e);
+		}
+	}   
+    
+}

@@ -1,0 +1,165 @@
+package Dao;
+
+import java.sql.*;
+import java.util.ArrayList;
+
+import Utilities.Conexao;
+import Dao_OLD.ConnectionFactory;
+
+public class CaronaRecebidaDAO {
+    private static PreparedStatement pstmt = null;
+    
+    private static ResultSet rs = null;
+	private Connection connection;
+    public ConnectionFactory conexta;
+	
+	public CaronaRecebidaDAO() {
+		this.connection = new ConnectionFactory().getConnection();	
+	}
+	
+    public void adiciona(CaronaRecebida carona) {
+		String sql = "INSERT INTO caronas (idCaronaRecebida, idCaronaOferecida, idUsuario) " +
+				" VALUES (?,?)";
+		try {	
+			// prepared statement para inserção		
+			PreparedStatement stmt = connection.prepareStatement(sql);						
+			// seta os valores
+			stmt.setInt(1,carona.getIdCaronaRecebida());
+			stmt.setInt(2,carona.getIdCaronaOferecida());
+			stmt.setInt(3, carona.getIdUsuario());
+			
+			// executa
+			stmt.execute();
+			stmt.close();
+			connection.close();
+			
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}		
+	}
+    
+    public static boolean update(CaronaOferecida carona) {
+        try {
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Update caronas Set idCarona=?, idUsuario=? where idCarona = ?");
+            pstmt.setString(1, rota.getOrigem());            
+            pstmt.setString(2, rota.getDestino());
+            pstmt.setString(3, rota.getParada1());
+            pstmt.setString(5, rota.getParada2());
+            pstmt.setString(6, rota.getParada3());
+            pstmt.setInt(7, rota.getIdUsuario());
+			pstmt.setString(8,rota.getHoraSaida());
+			pstmt.setString(9,rota.getHoraChegada());
+			pstmt.setInt(10, rota.getVagas());
+			pstmt.setDouble(11, rota.getKgBagagem());
+			pstmt.setDouble(12, rota.getPreco());
+			pstmt.setInt(13, rota.getTempoEspera());
+			pstmt.setString(14, rota.getObservacoes());
+			
+            pstmt.executeUpdate();
+            pstmt.close();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    
+    public static boolean delete(CaronaOferecida rota) {
+        try {
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Delete From caronas Where idCarona = ?");
+            pstmt.setInt(1, rota.getIdCaronaOferecida());
+            pstmt.executeUpdate();
+            pstmt.close();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    
+    public static ArrayList<CaronaOferecida> getAll() {
+        try {
+            ArrayList<CaronaOferecida> listAll = null;
+            CaronaOferecida rota = new CaronaOferecida();
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Select * From caronas Order By origem");
+            rs = pstmt.executeQuery();
+            if (rs.next()) {
+                listAll = new ArrayList<CaronaOferecida>();
+                do {
+                    rota = new CaronaOferecida();
+                    rota.setIdCaronaOferecida(rs.getInt("idRota"));
+                    rota.setOrigem(rs.getString("origem"));
+                    rota.setDestino(rs.getString("destino"));
+                    rota.setParada1(rs.getString("parada1"));
+                    rota.setParada2(rs.getString("parada2"));
+                    rota.setParada3(rs.getString("parada3"));
+                    rota.setPreco(rs.getDouble("preco"));
+                    rota.setTempoEspera(rs.getInt("tempoEspera"));
+                    rota.setVagas(rs.getInt("vagas"));
+                    rota.setHoraChegada(rs.getString("horaChegada"));
+                    rota.setHoraSaida(rs.getString("horaSaida"));
+                    rota.setKgBagagem(rs.getDouble("kgBagagem"));
+                    rota.setObservacoes(rs.getString("observacoes"));
+                    listAll.add(rota);
+                } while (rs.next());
+            }
+            rs.close();
+            pstmt.close();
+            return listAll;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    
+    public static CaronaOferecida getById(int Id) {
+        try {
+            CaronaOferecida rota = null;
+            pstmt = Conexao.getConnection().prepareStatement(
+                    "Select * From caronas Where idCarona = ?");
+            pstmt.setInt(1, Id);
+            rs = pstmt.executeQuery();
+            if (rs.next()) {
+                rota = new CaronaOferecida();
+                rota.setIdCaronaOferecida(rs.getInt("idCarona"));
+                rota.setOrigem(rs.getString("origem"));
+                rota.setDestino(rs.getString("destino"));
+                rota.setParada1(rs.getString("parada1"));
+                rota.setParada2(rs.getString("parada2"));
+                rota.setParada3(rs.getString("parada3"));
+                rota.setPreco(rs.getDouble("preco"));
+                rota.setTempoEspera(rs.getInt("tempoEspera"));
+                rota.setVagas(rs.getInt("vagas"));
+                rota.setHoraChegada(rs.getString("horaChegada"));
+                rota.setHoraSaida(rs.getString("horaSaida"));
+                rota.setKgBagagem(rs.getDouble("kgBagagem"));
+                rota.setObservacoes(rs.getString("observacoes"));
+            }
+            rs.close();
+            pstmt.close();
+            return rota;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+            
+	public int getLast() {
+		try{
+			int id = 0;
+			PreparedStatement stmt = this.connection.prepareStatement("SELECT MAX( idCarona ) as idCarona FROM caronas");
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next())
+			id = rs.getInt("idCarona");
+			rs.close();
+			stmt.close();
+			return id;
+		}catch (SQLException e){
+		throw new RuntimeException(e);
+		}
+	}   
+    
+}
