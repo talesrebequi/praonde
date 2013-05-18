@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;consane/WebContent/relatorio_pagamentos_fornecedor_filtro.jsp&apos; to &apos;relatorio_pagamentos_filtro.jsp&apos;" description="Rename resource &apos;relatorio_pagamentos_fornecedor_filtro.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/relatorio_pagamentos_fornecedor_filtro.jsp" name="relatorio_pagamentos_filtro.jsp" stamp="1313107134630" updateReferences="true"/>
-</session>

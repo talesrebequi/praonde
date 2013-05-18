@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;hic/WebContent/menu.html&apos; to &apos;menuBKP.html&apos;" description="Rename resource &apos;menu.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/menu.html" name="menuBKP.html" stamp="1321220779293" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;hic/WebContent/menuBKP.html&apos; to &apos;menu.html&apos;" description="Rename resource &apos;menuBKP.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/menuBKP.html" name="menu.html" stamp="1321220793702" updateReferences="true"/>
-</session>

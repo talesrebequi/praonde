@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename field &apos;ent8_email&apos; in &apos;Dao.Cliente&apos; to &apos;ent_email&apos;&#x0D;&#x0A;- Original project: &apos;consane&apos;&#x0D;&#x0A;- Original element: &apos;Dao.Cliente.ent8_email&apos;&#x0D;&#x0A;- Renamed element: &apos;Dao.Cliente.ent_email&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;ent8_email&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;Dao{Cliente.java[Cliente^ent8_email" name="ent_email" references="true" setter="false" stamp="1306881583446" textual="false" version="1.0"/>
-</session>

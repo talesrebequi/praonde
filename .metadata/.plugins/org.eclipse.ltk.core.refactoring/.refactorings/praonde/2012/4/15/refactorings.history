@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;hic/WebContent/laudo.html&apos; to &apos;exibe_laudo.jsp&apos;" description="Rename resource &apos;laudo.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/laudo.html" name="exibe_laudo.jsp" stamp="1333764416334" updateReferences="true"/>
-</session>

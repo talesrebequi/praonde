@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration type="tk.eclipse.plugin.jseditor.launch.JavaScriptLaunchConfigurationType">
-<stringAttribute key="javascript.file" value="C:\Users\Bruno\Desktop\praonde\praonde\WebContent\adiciona_usuario.jsp"/>
-<listAttribute key="javascript.includes"/>
-</launchConfiguration>
